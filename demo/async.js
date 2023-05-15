@@ -15,8 +15,8 @@ const fetchData = async () => {
     "http://gaoting666.cn:3300/api/article/list?pageSize=10&current=1"
   )
     .then((response) => response.json())
-    // .then((data) => console.log(data))
-    // .catch((error) => console.log(error));
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
 };
 
 export default {
