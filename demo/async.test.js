@@ -7,6 +7,9 @@ test("判断", () => {
   AsyncJesr.getFn(callback);
 });
 
+/**
+ * toMatch(regexp | string): 检查string是否与正则匹配
+ */
 test("测试fetch请求参数", async () => {
   await AsyncJesr.fetchData();
   // expect.assertions(1);
@@ -17,3 +20,4 @@ test("测试fetch请求参数", async () => {
     expect(e).toMatch("error");
   }
 });
+

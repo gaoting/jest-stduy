@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import fetch from "node-fetch";
 
 const getFn = (fn) => {
   return new Promise((res) => {
@@ -21,5 +21,5 @@ const fetchData = async () => {
 
 export default {
   fetchData,
-  getFn,
+  getFn
 };
