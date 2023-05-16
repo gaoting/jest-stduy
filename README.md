@@ -15,8 +15,18 @@ npm install --save-dev jest
 // 生成基础配置文件： jest.config.mjs
 jest --init
 
+// jest.config.js添加如下：
+  transform: {
+    "^.+\\.jsx?$": "babel-jest"
+  }
+
 // 安装babel
 npm install --save-dev babel-jest @babel/core @babel/preset-env
+
+// package.json 添加如下:
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
 ```
 
 ## 配置
